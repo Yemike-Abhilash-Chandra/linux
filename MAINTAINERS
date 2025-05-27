@@ -18375,6 +18375,8 @@ M:	Alexey Klimov <alexey.klimov@linaro.org>
 L:	linux-media@vger.kernel.org
 S:	Maintained
 T:	git git://linuxtv.org/media.git
+F:	drivers/media/i2c/ov1063x.c
+F:	drivers/media/i2c/ov1063x_regs.h
 F:	drivers/media/radio/radio-mr800.c
 
 MRF24J40 IEEE 802.15.4 RADIO DRIVER
