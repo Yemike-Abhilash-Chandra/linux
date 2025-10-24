@@ -269,7 +269,7 @@
 			interrupts = <GIC_SPI 352 IRQ_TYPE_LEVEL_HIGH>,
 				     <GIC_SPI 393 IRQ_TYPE_LEVEL_HIGH>;
 			/* CTRL_CORE_SMA_SW_1 */
-			ti,ctrl-module = <&scm_conf 0x534>;
+			ti,ctrl-module = <&scm_conf 0x534 0x4 0x6 0x5 0x7>;
 
 			ports {
 				#address-cells = <1>;
