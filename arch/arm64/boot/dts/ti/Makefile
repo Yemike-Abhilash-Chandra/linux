@@ -250,6 +250,9 @@ dtb-$(CONFIG_ARCH_K3) += k3-j784s4-j742s2-evm-usb0-type-a.dtbo
 # Boards with J742S2 SoC
 dtb-$(CONFIG_ARCH_K3) += k3-j742s2-evm.dtb
 
+# IMX219 FPDLink Sensors
+dtb-$(CONFIG_ARCH_K3) += k3-v3link-imx219-0-0.dtbo
+
 # Build time test only, enabled by CONFIG_OF_ALL_DTBS
 k3-am625-beagleplay-csi2-ov5640-dtbs := k3-am625-beagleplay.dtb \
 	k3-am625-beagleplay-csi2-ov5640.dtbo
@@ -385,6 +388,9 @@ k3-am68-sk-fpdlink-fusion-dtbs := k3-am68-sk-base-board.dtb \
 	k3-j721e-sk-fpdlink-fusion.dtbo
 k3-am68-sk-v3link-fusion-dtbs := k3-am68-sk-base-board.dtb \
 	k3-am68-sk-v3link-fusion.dtbo
+k3-am68-sk-v3link-fusion-imx219-dtbs := k3-am68-sk-base-board.dtb \
+	k3-am68-sk-v3link-fusion.dtbo \
+	k3-v3link-imx219-0-0.dtbo
 k3-am69-aquila-clover-panel-cap-touch-7inch-dsi-dtbs := \
 	k3-am69-aquila-clover.dtb \
 	k3-am69-aquila-panel-cap-touch-7inch-dsi.dtbo
@@ -416,6 +422,9 @@ k3-am69-sk-pcie0-ep-dtbs := k3-am69-sk.dtb \
 	k3-am69-sk-pcie0-ep.dtbo
 k3-am69-sk-v3link-fusion-dtbs := k3-am69-sk.dtb \
 	k3-am68-sk-v3link-fusion.dtbo
+k3-am69-sk-v3link-fusion-imx219-dtbs := k3-am69-sk.dtb \
+	k3-am68-sk-v3link-fusion.dtbo \
+	k3-v3link-imx219-0-0.dtbo
 k3-j7200-evm-pcie1-ep-dtbs := k3-j7200-common-proc-board.dtb \
 	k3-j7200-evm-pcie1-ep.dtbo
 k3-j721e-common-proc-board-infotainment-dtbs := k3-j721e-common-proc-board.dtb \
@@ -434,6 +443,9 @@ k3-j721e-sk-fpdlink-fusion-dtbs := k3-j721e-sk.dtb \
 	k3-j721e-sk-fpdlink-fusion.dtbo
 k3-j721e-sk-v3link-fusion-dtbs := k3-j721e-sk.dtb \
 	k3-am68-sk-v3link-fusion.dtbo
+k3-j721e-sk-v3link-fusion-imx219-dtbs := k3-j721e-sk.dtb \
+	k3-am68-sk-v3link-fusion.dtbo \
+	k3-v3link-imx219-0-0.dtbo
 k3-j721s2-evm-fpdlink-fusion-dtbs := k3-j721s2-evm.dtb \
 	k3-j721s2-evm-fusion.dtbo
 k3-j721s2-evm-pcie1-ep-dtbs := k3-j721s2-common-proc-board.dtb \
@@ -452,6 +464,9 @@ k3-j722s-evm-fpdlink-iv-fusion-dtbs := k3-j722s-evm.dtb \
 	k3-j722s-evm-fpdlink-iv-fusion.dtbo
 k3-j722s-evm-v3link-fusion-dtbs := k3-j722s-evm.dtb \
 	k3-j722s-evm-v3link-fusion.dtbo
+k3-j722s-evm-v3link-fusion-imx219-dtbs := k3-j722s-evm.dtb \
+	k3-j722s-evm-v3link-fusion.dtbo \
+	k3-v3link-imx219-0-0.dtbo
 k3-j742s2-evm-fpdlink-fusion-dtbs := k3-j742s2-evm.dtb \
 	k3-j721s2-evm-fusion.dtbo
 k3-j742s2-evm-ub954-dtbs := k3-j742s2-evm.dtb \
@@ -538,6 +553,7 @@ dtb- += k3-am625-beagleplay-csi2-ov5640.dtb \
 	k3-am68-sk-base-board-pcie1-ep.dtb \
 	k3-am68-sk-fpdlink-fusion.dtb \
 	k3-am68-sk-v3link-fusion.dtb \
+	k3-am68-sk-v3link-fusion-imx219.dtb \
 	k3-am69-aquila-clover-panel-cap-touch-7inch-dsi.dtb \
 	k3-am69-aquila-dev-adapter-panel-cap-touch-10inch-dsi.dtb \
 	k3-am69-aquila-dev-adapter-panel-cap-touch-7inch-dsi.dtb \
@@ -549,6 +565,7 @@ dtb- += k3-am625-beagleplay-csi2-ov5640.dtb \
 	k3-am69-sk-fpdlink-fusion.dtb \
 	k3-am69-sk-pcie0-ep.dtb \
 	k3-am69-sk-v3link-fusion.dtb \
+	k3-am69-sk-v3link-fusion-imx219.dtb \
 	k3-j7200-evm-pcie1-ep.dtb \
 	k3-j721e-common-proc-board-infotainment.dtb \
 	k3-j721e-evm-fpdlink-fusion.dtb \
@@ -558,6 +575,7 @@ dtb- += k3-am625-beagleplay-csi2-ov5640.dtb \
 	k3-j721e-sk-csi2-dual-imx219.dtb \
 	k3-j721e-sk-fpdlink-fusion.dtb \
 	k3-j721e-sk-v3link-fusion.dtb \
+	k3-j721e-sk-v3link-fusion-imx219.dtb \
 	k3-j721s2-evm-fpdlink-fusion.dtb \
 	k3-j721s2-evm-pcie1-ep.dtb \
 	k3-j721s2-evm-ub954.dtb \
@@ -567,6 +585,7 @@ dtb- += k3-am625-beagleplay-csi2-ov5640.dtb \
 	k3-j722s-evm-fpdlink-fusion.dtb \
 	k3-j722s-evm-fpdlink-iv-fusion.dtb \
 	k3-j722s-evm-v3link-fusion.dtb \
+	k3-j722s-evm-v3link-fusion-imx219.dtb \
 	k3-j742s2-evm-fpdlink-fusion.dtb \
 	k3-j742s2-evm-ub954.dtb \
 	k3-j742s2-evm-usb0-type-a.dtb \
